@@ -35,9 +35,11 @@ var app = {
 
     initialize: function() {
         var self = this;
+		console.log("in initialize");
 		this.store = new MemoryStore(function() {
 			self.showAlert('Store Initialized', 'Info');
 			self.renderHomeView();
+			console.log("in this.store");
 		});
         $('.search-key').on('keyup', $.proxy(this.findByName, this));
     }
