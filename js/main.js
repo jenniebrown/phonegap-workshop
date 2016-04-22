@@ -16,7 +16,7 @@ var app = {
 	
 	findByName: function() {
         console.log('findByName');
-		vaar self = this;
+		var self = this;
         this.store.findByName($('.search-key').val(), function(employees) {
 			$('.employee-list').html(self.employeeLiTpl(employees));    
         });
