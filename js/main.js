@@ -28,7 +28,6 @@ var app = {
 		this.employeeLiTpl = Handlebars.compile($("#employee-li-tpl").html());
 		console.log("in initialize");
 		this.store = new MemoryStore(function() {
-			self.showAlert('Store Initialized', 'Info');
 			self.renderHomeView();
 			console.log("in this.store");
 		});
